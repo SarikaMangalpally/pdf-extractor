@@ -1,0 +1,7 @@
+fastapi
+pydantic
+requests
+pdfplumber
+pytesseract
+pdf2image
+uvicorn
