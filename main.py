@@ -8,9 +8,13 @@ from text_extractor import extract_text_from_pdf, extract_text_from_images
 app = FastAPI()
 
 # Allow CORS
+origins = [
+    "https://pdfextractor.xyz",
+    "http://localhost:3000",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_origins=[origins],  # Allows all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
