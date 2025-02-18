@@ -9,12 +9,14 @@ app = FastAPI()
 
 # Allow CORS
 origins = [
-    "https://pdfextractor.xyz",
     "http://localhost:3000",
+    "https://pdfextractor.xyz",
+    "https://www.pdfextractor.xyz",
+    "https://api.pdfextractor.xyz"
 ]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[origins],  # Allows all origins
+    allow_origins=["*"],  # Allows all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
