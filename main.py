@@ -12,7 +12,7 @@ origins = [
     "http://localhost:3000",
     "https://pdfextractor.xyz",
     "https://www.pdfextractor.xyz",
-    # "https://api.pdfextractor.xyz"
+    "https://api.pdfextractor.xyz"
 ]
 app.add_middleware(
     CORSMiddleware,
